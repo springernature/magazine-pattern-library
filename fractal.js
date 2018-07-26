@@ -15,7 +15,8 @@ const mandelbrot = require("@frctl/mandelbrot"); // require the Mandelbrot theme
 // create a new instance with custom config options
 const myCustomisedTheme = mandelbrot({
   skin: "red",
-  styles: ["default", "/css/tweaks.css"]
+  styles: ["default", "/css/tweaks.css"],
+  favicon: "/images/favicon.ico"
   // any other theme configuration values here
 });
 
