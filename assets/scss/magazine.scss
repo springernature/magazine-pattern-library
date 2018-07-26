@@ -1,0 +1,53 @@
+$breakpoints: (
+  "palm": 300px,
+  "lap": 480px,
+  "portable": 700px,
+  "desk": 960px,
+  "large": 1280px
+) !default;
+
+@function em($size) {
+  // Divide by 16px which is (generally) the browser default font size
+  @return ($size / 16px) * 1em;
+}
+
+@mixin media-query($media-query) {
+  $breakpoint-found: false;
+  @each $breakpoint in $breakpoints {
+    $name: nth($breakpoint, 1);
+    $declaration: nth($breakpoint, 2);
+    @if $media-query == $name and $declaration {
+      $breakpoint-found: true;
+
+      /* @media only screen and (min-width: 75.06em) */
+
+      /*@media only screen and #{$declaration} {*/
+      @media only screen and (min-width: #{em($declaration)}) {
+        @content;
+      }
+    }
+  }
+  @if not $breakpoint-found {
+    @warn 'Breakpoint `#{$media-query}` does not exist';
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 20px;
+  font-size: 17px;
+}
+
+img {
+  max-width: 100%;
+}
+
+@import "../../components/**/*.scss";

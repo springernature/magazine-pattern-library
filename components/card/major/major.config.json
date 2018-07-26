@@ -1,0 +1,35 @@
+{
+  "title": "Major",
+  "status": "ready",
+  "default": "major",
+  "tags": ["sprint-1", "author:matteo"],
+  "context": {},
+  "variants": [
+    {
+      "name": "major",
+      "label": "Major with image",
+      "context": {
+        "modifier": "major",
+        "demo": true,
+        "title":
+          "Ecologists try to speed up evolution to save Australian marsupial from toxic toads.",
+        "articleType": "News",
+        "date": "18 JUL 2018",
+        "image":
+          "//media.nature.com/w580h326/magazine-assets/d41586-018-05757-y/d41586-018-05757-y_15963120.jpg"
+      }
+    },
+    {
+      "name": "major-no-image",
+      "label": "Major without image",
+      "context": {
+        "modifier": "major-no-image",
+        "demo": true,
+        "title":
+          "Ecologists try to speed up evolution to save Australian marsupial from toxic toads.",
+        "articleType": "News",
+        "date": "18 JUL 2018"
+      }
+    }
+  ]
+}
