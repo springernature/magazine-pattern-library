@@ -1,5 +1,16 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: #f4f4f4;
+  -webkit-text-size-adjust: 100%;
+  font-stretch: normal; }
+
 body {
   font-family: "Lora", serif; }
 
 .Header {
   background-color: #940720; }
+
+.Tree-item {
+  font: normal 0.875rem/1.71429 "Source Sans Pro", sans-serif; }
