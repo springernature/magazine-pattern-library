@@ -22,7 +22,7 @@ const myCustomisedTheme = mandelbrot({
 /*
  * Give your project a title.
  */
-fractal.set("project.title", "Magazine Library");
+fractal.set("project.title", "Magazine Pattern Library");
 
 /*
  * Tell Fractal where to look for components.
@@ -32,13 +32,13 @@ fractal.components.set("path", path.join(__dirname, "components"));
 /*
  * Tell Fractal where to look for documentation pages.
  */
-fractal.docs.set("path", path.join(__dirname, "docs"));
+fractal.docs.set("path", path.join(__dirname, "documentation"));
 
 /*
  * Tell the Fractal web preview plugin where to look for static assets.
  */
 fractal.web.set("static.path", path.join(__dirname, "public"));
 
-fractal.web.set("builder.dest", __dirname + "/static");
+fractal.web.set("builder.dest", __dirname + "/docs");
 
 fractal.web.theme(myCustomisedTheme);
