@@ -1,5 +1,9 @@
 ---
-title: Magazine Library
+title: Magazine Pattern Library
 ---
 
-This is your index page. You can edit its contents at `docs/01-index.hbs`
+### Components
+
+### Layout
+
+[Home Page](/components/detail/home-page.html)
