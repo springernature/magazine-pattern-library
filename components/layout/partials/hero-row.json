@@ -1,11 +1,9 @@
 {
-  "title": "Regular",
+  "title": "Hero row",
   "status": "ready",
-  "default": "regular",
   "tags": ["sprint-1", "author:matteo"],
   "context": {
-    "modifier": "highlighted",
-    "demo": true,
+    "modifier": "big",
     "title":
       "Ecologists try to speed up evolution to save Australian marsupial from toxic toads.",
     "articleType": "News",
