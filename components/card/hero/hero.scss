@@ -1,4 +1,4 @@
-.c-card--hero {
+.has-flex .c-card--hero {
   background-color: #f2f2f2;
   padding: 10px;
   .c-card__title {
@@ -9,15 +9,25 @@
   }
 }
 
+.has-flex .c-card--hero-big {
+  .c-card__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .c-card__image-container {
+    margin: 15px -10px -10px -10px;
+  }
+}
+
 @include media-query("lap") {
   .has-flex .c-card--hero-big {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     .c-card__container {
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: reverse;
       -webkit-flex-direction: row-reverse;
