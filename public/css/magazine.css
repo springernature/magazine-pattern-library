@@ -257,12 +257,6 @@ img {
   flex-basis: 100%;
   width: 100%; }
 
-.u-flex__container--2by2 .u-flex__item--span-1 {
-  -webkit-flex-basis: 50%;
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
-  width: 50%; }
-
 /* @media only screen and (min-width: 75.06em) */
 /*@media only screen and 700px {*/
 @media only screen and (min-width: 43.75em) {
@@ -270,7 +264,12 @@ img {
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
-    width: 25%; } }
+    width: 25%; }
+  .u-flex__container--2by2 .u-flex__item--span-1 {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    width: 50%; } }
 
 .u-serif {
   font-family: "Lora", serif; }
