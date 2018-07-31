@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="../../css/tweaks.css?cachebust=1.2.0" type="text/css">
 
 
-<title>Major: Major with image | Magazine Pattern Library</title>
+<title>Major: Major without image | Magazine Pattern Library</title>
 
 </head>
 <body>
@@ -61,7 +61,7 @@
     <div class="Pen-panel Pen-header">
     <h1 class="Pen-title">
         <a class="Pen-previewLink" href="../preview/major--major.html" title="Component preview">
-            Major: Major with image
+            Major: Major without image
             <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
@@ -161,11 +161,6 @@
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card c-card--major u-demo-container--small"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__container"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__image-container c-card__image-container"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-responsive-ratio"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"//media.nature.com/w580h326/magazine-assets/d41586-018-05757-y/d41586-018-05757-y_15963120.jpg"</span> /&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__copy"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__title u-serif"</span>&gt;</span>Ecologists try to speed up evolution to save Australian marsupial from toxic toads.<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__footer"</span>&gt;</span>
@@ -186,7 +181,7 @@
         <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card c-card--</span></span></span><span class="hljs-template-variable">{{ modifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> demo}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">u-demo-container--small</span></span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__container"</span>&gt;</span>
         </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> image}}</span><span class="xml">
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__image-container c-card__image-container"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__image-container"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-responsive-ratio"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ image }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> /&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -215,8 +210,7 @@
   <span class="hljs-attr">"demo"</span>: <span class="hljs-literal">true</span>,
   <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Ecologists try to speed up evolution to save Australian marsupial from toxic toads."</span>,
   <span class="hljs-attr">"articleType"</span>: <span class="hljs-string">"News"</span>,
-  <span class="hljs-attr">"date"</span>: <span class="hljs-string">"18 JUL 2018"</span>,
-  <span class="hljs-attr">"image"</span>: <span class="hljs-string">"//media.nature.com/w580h326/magazine-assets/d41586-018-05757-y/d41586-018-05757-y_15963120.jpg"</span>
+  <span class="hljs-attr">"date"</span>: <span class="hljs-string">"18 JUL 2018"</span>
 }</pre>
             
         
@@ -248,7 +242,54 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre></pre>
+                                <pre><span class="hljs-selector-class">.has-flex</span> <span class="hljs-selector-class">.c-card--major</span> {
+  -webkit-<span class="hljs-attribute">flex-basis</span>: <span class="hljs-number">100%</span>;
+  -ms-<span class="hljs-attribute">flex</span>-preferred-size: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">flex-basis</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-selector-class">.c-card__container</span> {
+    -webkit-box-orient: horizontal;
+    -webkit-box-<span class="hljs-attribute">direction</span>: reverse;
+    -webkit-<span class="hljs-attribute">flex-direction</span>: row-reverse;
+    -ms-<span class="hljs-attribute">flex-direction</span>: row-reverse;
+    <span class="hljs-attribute">flex-direction</span>: row-reverse;
+  }
+  <span class="hljs-selector-class">.c-card__image-container</span> {
+    -webkit-<span class="hljs-attribute">flex-basis</span>: <span class="hljs-number">40%</span>;
+    -ms-<span class="hljs-attribute">flex</span>-preferred-size: <span class="hljs-number">40%</span>;
+    <span class="hljs-attribute">flex-basis</span>: <span class="hljs-number">40%</span>;
+  }
+  <span class="hljs-selector-class">.c-card__copy</span> {
+    -webkit-<span class="hljs-attribute">flex-basis</span>: <span class="hljs-number">60%</span>;
+    -ms-<span class="hljs-attribute">flex</span>-preferred-size: <span class="hljs-number">60%</span>;
+    <span class="hljs-attribute">flex-basis</span>: <span class="hljs-number">60%</span>;
+  }
+}
+@<span class="hljs-keyword">include</span> media-query(<span class="hljs-string">"lap"</span>) {
+  <span class="hljs-selector-class">.has-flex</span> <span class="hljs-selector-class">.c-card--major</span> {
+    -webkit-<span class="hljs-attribute">flex-basis</span>: <span class="hljs-number">100%</span>;
+    -ms-<span class="hljs-attribute">flex</span>-preferred-size: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">flex-basis</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-selector-class">.c-card__container</span> {
+      -webkit-box-orient: vertical;
+      -webkit-box-<span class="hljs-attribute">direction</span>: reverse;
+      -webkit-<span class="hljs-attribute">flex-direction</span>: column-reverse;
+      -ms-<span class="hljs-attribute">flex-direction</span>: column-reverse;
+      <span class="hljs-attribute">flex-direction</span>: column-reverse;
+    }
+    <span class="hljs-selector-class">.c-card__image-container</span> {
+      -webkit-<span class="hljs-attribute">flex-basis</span>: <span class="hljs-number">100%</span>;
+      -ms-<span class="hljs-attribute">flex</span>-preferred-size: <span class="hljs-number">100%</span>;
+      <span class="hljs-attribute">flex-basis</span>: <span class="hljs-number">100%</span>;
+    }
+    <span class="hljs-selector-class">.c-card__copy</span> {
+      -webkit-<span class="hljs-attribute">flex-basis</span>: <span class="hljs-number">100%</span>;
+      -ms-<span class="hljs-attribute">flex</span>-preferred-size: <span class="hljs-number">100%</span>;
+      <span class="hljs-attribute">flex-basis</span>: <span class="hljs-number">100%</span>;
+      <span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
+    }
+  }
+}
+</pre>
                             </code>
                             
                         </div>
@@ -264,7 +305,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">0 Byte</span>
+                    <span class="Meta-value">1.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -300,15 +341,19 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(2)</em>:</strong>
+            <strong class="Meta-key">Variants <em class="Meta-count">(3)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="">
+                    <span>Major without image</span>
+                </a>, 
+            
+                <a href="major--major-image.html">
                     <span>Major with image</span>
                 </a>, 
             
-                <a href="major--major-no-image.html">
-                    <span>Major without image</span>
+                <a href="major--reverse-column.html">
+                    <span>Major reversed column</span>
                 </a>
             
             </span>
@@ -398,10 +443,21 @@
             
     
         
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-hero">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Hero</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="highlighted.html" data-pjax>
-                <span>Highlighted</span>
+            <a class="Tree-entityLink" href="hero--regular.html" data-pjax>
+                <span>Regular</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -422,6 +478,35 @@
         
     
         
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--big.html" data-pjax>
+                <span>Big</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
         <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-major">
             <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Major</span>
@@ -436,6 +521,30 @@
         
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
             <a class="Tree-entityLink" href="" data-pjax>
+                <span>Major without image</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="major--major-image.html" data-pjax>
                 <span>Major with image</span>
                 
 
@@ -459,8 +568,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="major--major-no-image.html" data-pjax>
-                <span>Major without image</span>
+            <a class="Tree-entityLink" href="major--reverse-column.html" data-pjax>
+                <span>Major reversed column</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -544,6 +653,30 @@
         </li>
         
     
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="regular--reverse-column.html" data-pjax>
+                <span>Regular with column reversed</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
 
             </ul>
         </li>
@@ -566,10 +699,21 @@
             
     
         
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-home-page">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Home Page</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="home-page.html" data-pjax>
-                <span>Home Page</span>
+            <a class="Tree-entityLink" href="home-page--regular.html" data-pjax>
+                <span>Regular</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -590,6 +734,35 @@
         
     
         
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="home-page--hero.html" data-pjax>
+                <span>Hero row</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
         <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-partials">
             <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Partials</span>
@@ -603,8 +776,56 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="highlighted-two-by-two.html" data-pjax>
-                <span>Highlighted Two By Two</span>
+            <a class="Tree-entityLink" href="card-list.html" data-pjax>
+                <span>Card List</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero-row.html" data-pjax>
+                <span>Hero Row</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero-two-by-two.html" data-pjax>
+                <span>Hero Two By Two</span>
                 
 
 <div class="Status Status--unlabelled">
