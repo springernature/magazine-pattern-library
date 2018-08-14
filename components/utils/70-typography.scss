@@ -1,0 +1,136 @@
+.u-text-left {
+  text-align: left;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-right {
+  text-align: right;
+}
+
+.u-upper {
+  text-transform: uppercase;
+}
+
+.u-lower {
+  text-transform: lowercase;
+}
+
+.u-capitalize {
+  text-transform: capitalize;
+}
+
+.u-underline {
+  text-decoration: underline;
+  -webkit-text-decoration-skip: skip;
+  text-decoration-skip: ink;
+}
+
+.u-double-underline {
+  text-decoration: underline;
+  -webkit-text-decoration-skip: skip;
+  text-decoration-skip: ink;
+  border-bottom: 1px solid;
+}
+
+.u-monospace {
+  font-family: monospace;
+}
+
+.u-nowrap {
+  white-space: nowrap;
+}
+
+.u-prewrap {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.u-overflow-ellipsis {
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+.u-font-weight--regular {
+  font-weight: 400;
+}
+
+.u-font-weight--semi-bold {
+  font-weight: 700;
+}
+
+.u-font-weight--bold {
+  font-weight: 700;
+}
+
+/* .u-strong and .u-emphasis from normalize can be used to add bold and italic respectively */
+
+.u-unstyled {
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+note: font-variant: small-caps doesn't display as we need for single character strings
+when source text is already uppercase, hence the use of font-size, text-transform
+*/
+
+.u-small-caps {
+  font-size: 0.8em; /* scale based on containing text */
+  text-transform: uppercase;
+}
+
+.u-serif {
+  font-family: "Lora", Palatino, Times, "Times New Roman", serif;
+}
+
+.u-sans-serif {
+  font-family: "Source Sans Pro", helvetica, sans-serif;
+}
+
+/* force standard text sizes */
+
+.u-text11 {
+  font-size: 1.1rem;
+}
+
+.u-text13 {
+  font-size: 1.3rem;
+}
+
+.u-text14 {
+  font-size: 1.4rem;
+}
+
+.u-text17 {
+  font-size: 1.7rem; /* body copy */
+}
+
+.u-text18 {
+  font-size: 1.8rem;
+}
+
+.u-text24 {
+  font-size: 2.4rem;
+}
+
+.u-text30 {
+  font-size: 3rem;
+}
+
+.u-text48 {
+  font-size: 4.8rem;
+}
+
+/* vertical alignment */
+
+.u-v-middle {
+  vertical-align: middle;
+}
+
+.u-v-top {
+  vertical-align: top;
+}

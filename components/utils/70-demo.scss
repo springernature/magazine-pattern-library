@@ -1,0 +1,26 @@
+.u-inline-block {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -4px;
+}
+
+.u-container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.u-demo-container {
+  max-width: 500px;
+  box-shadow: 0 1px 4px 3px #ebebeb;
+  padding: 15px;
+}
+
+.u-demo-container--small {
+  max-width: 300px;
+  box-shadow: 0 1px 4px 3px #ebebeb;
+  padding: 15px;
+}
+
+.u-full-width {
+  width: 100%;
+}

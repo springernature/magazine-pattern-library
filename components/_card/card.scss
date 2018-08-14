@@ -1,0 +1,78 @@
+$primary-color: #222;
+$secondary-color: #666;
+
+.c-card {
+  position: relative;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 15px;
+  color: $primary-color;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+}
+
+.card__container {
+  position: relative;
+}
+
+.c-card__copy {
+  margin-bottom: 15px;
+  padding-left: 0.3125rem;
+  padding-right: 0.3125rem;
+}
+
+.c-card__title {
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.c-card__article-type,
+.c-card__date,
+.c-card__spacer {
+  letter-spacing: 0.9px;
+  color: $secondary-color;
+}
+
+.c-card__article-type {
+  font-size: 13px;
+  letter-spacing: 0.9px;
+  color: $secondary-color;
+  text-transform: uppercase;
+}
+
+.c-card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.c-card a:hover .c-card__title {
+  text-decoration: underline;
+}
+
+.c-card--hero {
+  background-color: #f2f2f2;
+  padding: 10px;
+  .c-card__title {
+    font-size: 24px;
+  }
+  .c-card__image-container {
+    margin: -10px -10px 15px -10px;
+  }
+}
+
+@include media-query("portable") {
+  .has-flex .c-card__container {
+    width: 0;
+  }
+}
+
+.c-card--regular-image .c-card__image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 109px;
+}
+
+.c-card--regular-image .c-card__copy {
+  padding-left: 119px;
+}

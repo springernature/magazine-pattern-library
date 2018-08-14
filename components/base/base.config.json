@@ -1,0 +1,27 @@
+{
+  "title": "Base",
+  "status": "prototype",
+  "tags": ["sprint-1"],
+  "default": "headings",
+  "context": {},
+  "variants": [
+    {
+      "name": "headings",
+      "label": "Headings",
+      "context": {
+        "modifier": "headings",
+        "text":
+          "In a dramatic restructuring, two teams have created versions of baker’s yeast with vastly reduced chromosome counts."
+      }
+    },
+    {
+      "name": "text",
+      "label": "Text",
+      "context": {
+        "modifier": "text",
+        "text":
+          "In a dramatic restructuring, two teams have created versions of baker’s yeast with vastly reduced chromosome counts."
+      }
+    }
+  ]
+}

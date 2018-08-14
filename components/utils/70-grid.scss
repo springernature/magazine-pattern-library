@@ -1,0 +1,34 @@
+//grid gap
+$grid-gap: 10px;
+$grid-columns: 4;
+
+//flex container definition
+.u-flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(#{$grid-gap} * -1) 0 0 calc(#{$grid-gap} * -1);
+}
+
+//flex item definition
+.u-col {
+  box-sizing: border-box;
+  background-clip: content-box;
+  flex-basis: 100%;
+}
+
+//round flex items' width
+@function round-width($i) {
+  $width: floor(100 * $i * 100 / $grid-columns) / 100;
+  @return $width#{"%"};
+}
+
+@each $label, $map in $breakpoint-map {
+  @media only screen and (min-width: map-get($map, min-width)) {
+    @for $i from 1 through $grid-columns {
+      .u-col--#{$label}-#{$i} {
+        flex-basis: round-width($i);
+        max-width: round-width($i);
+      }
+    }
+  }
+}

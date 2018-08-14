@@ -1,0 +1,73 @@
+{
+  "title": "Card",
+  "status": "prototype",
+  "default": "regular",
+  "tags": ["sprint-1", "author:matteo"],
+  "context": {},
+  "variants": [
+    {
+      "name": "regular-image",
+      "label": "Regular with image",
+      "context": {
+        "modifier": "regular-image",
+        "demo": true,
+        "title":
+          "Ecologists try to speed up evolution to save Australian marsupial from toxic toads.",
+        "articleType": "News",
+        "date": "18 JUL 2018",
+        "image":
+          "//media.nature.com/w580h326/magazine-assets/d41586-018-05757-y/d41586-018-05757-y_15963120.jpg"
+      }
+    },
+    {
+      "name": "regular",
+      "label": "Regular without image",
+      "context": {
+        "modifier": "regular",
+        "title":
+          "Ecologists try to speed up evolution to save Australian marsupial from toxic toads.",
+        "articleType": "News",
+        "date": "18 JUL 2018"
+      }
+    },
+    {
+      "name": "hero",
+      "label": "Hero",
+      "context": {
+        "modifier": "hero",
+        "demo": true,
+        "title":
+          "Ecologists try to speed up evolution to save Australian marsupial from toxic toads.",
+        "articleType": "News",
+        "date": "18 JUL 2018",
+        "image":
+          "//media.nature.com/w580h326/magazine-assets/d41586-018-05757-y/d41586-018-05757-y_15963120.jpg"
+      }
+    },
+    {
+      "name": "major-image",
+      "label": "Major with image",
+      "context": {
+        "modifier": "major-image",
+        "demo": true,
+        "title":
+          "Ecologists try to speed up evolution to save Australian marsupial from toxic toads.",
+        "articleType": "News",
+        "date": "18 JUL 2018",
+        "image":
+          "//media.nature.com/w580h326/magazine-assets/d41586-018-05757-y/d41586-018-05757-y_15963120.jpg"
+      }
+    },
+    {
+      "name": "major",
+      "label": "Major without image",
+      "context": {
+        "modifier": "major",
+        "title":
+          "Ecologists try to speed up evolution to save Australian marsupial from toxic toads.",
+        "articleType": "News",
+        "date": "18 JUL 2018"
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Card demo",
+  "status": "prototype",
+  "tags": ["sprint-1"],
+  "default": "card",
+  "context": {},
+  "variants": [
+    {
+      "name": "card",
+      "label": "Card",
+      "context": {
+        "modifier": "card"
+      }
+    },
+    {
+      "name": "home-v1",
+      "label": "Home v1",
+      "context": {
+        "modifier": "home-v1"
+      }
+    }
+  ]
+}

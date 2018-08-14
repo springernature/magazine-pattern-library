@@ -1,6 +1,10 @@
 {
   "name": "magazine-library",
   "version": "0.1.0",
+  "description": "Magazine Pattern Library",
+  "bin": {
+    "cli": "./bin/cli.js"
+  },
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
     "gulp": "^3.9.1",
@@ -8,5 +12,12 @@
     "gulp-plumber": "^1.2.0",
     "gulp-sass": "^4.0.1",
     "gulp-sass-glob": "^1.0.9"
+  },
+  "devDependencies": {
+    "chalk": "^2.4.1",
+    "cheerio": "^1.0.0-rc.2",
+    "colors": "^1.3.1",
+    "commander": "^2.16.0",
+    "puppeteer": "^1.7.0"
   }
 }
