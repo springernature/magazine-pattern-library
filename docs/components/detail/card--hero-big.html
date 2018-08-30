@@ -169,6 +169,9 @@
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__copy u-flex__content u-col--small-4 u-col--large-2"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__title u-serif u-text17 u-font-weight--regular"</span>&gt;</span>Ecologists try to speed up evolution to save Australian marsupial from toxic toads.<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__standfirst u-serif u-text17"</span>&gt;</span>
+                    The strategy could also be used to bolster the defences of Tasmanian devils and corals on the Great Barrier Reef.
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__footer"</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__article-type sans-serif strong u-sans-serif u-text13 u-upper"</span>&gt;</span>News<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__spacer u-sans-serif u-text13"</span>&gt;</span> | <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
@@ -197,6 +200,11 @@
             </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__copy u-flex__content u-col--small-4 u-col--large-2"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__title u-serif u-text17 u-font-weight--regular"</span>&gt;</span></span><span class="hljs-template-variable">{{ title }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> standfirst}}</span><span class="xml">
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__standfirst u-serif u-text17"</span>&gt;</span>
+                    </span><span class="hljs-template-variable">{{standfirst}}</span><span class="xml">
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__footer"</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__article-type sans-serif strong u-sans-serif u-text13 u-upper"</span>&gt;</span></span><span class="hljs-template-variable">{{ articleType }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__spacer u-sans-serif u-text13"</span>&gt;</span> | <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
@@ -220,7 +228,8 @@
   <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Ecologists try to speed up evolution to save Australian marsupial from toxic toads."</span>,
   <span class="hljs-attr">"articleType"</span>: <span class="hljs-string">"News"</span>,
   <span class="hljs-attr">"date"</span>: <span class="hljs-string">"18 JUL 2018"</span>,
-  <span class="hljs-attr">"image"</span>: <span class="hljs-string">"//media.nature.com/w580h326/magazine-assets/d41586-018-05757-y/d41586-018-05757-y_15963120.jpg"</span>
+  <span class="hljs-attr">"image"</span>: <span class="hljs-string">"//media.nature.com/w580h326/magazine-assets/d41586-018-05757-y/d41586-018-05757-y_15963120.jpg"</span>,
+  <span class="hljs-attr">"standfirst"</span>: <span class="hljs-string">"The strategy could also be used to bolster the defences of Tasmanian devils and corals on the Great Barrier Reef."</span>
 }</pre>
             
         
@@ -303,6 +312,17 @@
   <span class="hljs-attribute">text-decoration</span>: underline;
 }
 
+<span class="hljs-selector-class">.c-card__image-container</span>,
+<span class="hljs-selector-class">.c-card__standfirst</span> {
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">10px</span>;
+}
+
+<span class="hljs-selector-class">.c-card__standfirst</span> {
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">0.3px</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#595959</span>;
+}
+
 <span class="hljs-selector-class">.c-card--hero</span>,
 <span class="hljs-selector-class">.c-card--hero-big</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f2f2f2</span>;
@@ -359,7 +379,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.4 KB</span>
+                    <span class="Meta-value">1.6 KB</span>
                 </li>
             </ul>
         </div>

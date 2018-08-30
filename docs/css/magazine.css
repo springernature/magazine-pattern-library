@@ -73,6 +73,15 @@ img {
 .c-card a:hover .c-card__title {
   text-decoration: underline; }
 
+.c-card__image-container,
+.c-card__standfirst {
+  margin-bottom: 10px; }
+
+.c-card__standfirst {
+  margin-bottom: 10px;
+  letter-spacing: 0.3px;
+  color: #595959; }
+
 .c-card--hero,
 .c-card--hero-big {
   background-color: #f2f2f2;
@@ -902,6 +911,9 @@ when source text is already uppercase, hence the use of font-size, text-transfor
 
 .u-text14 {
   font-size: 1.4rem; }
+
+.u-text15 {
+  font-size: 1.5rem; }
 
 .u-text17 {
   font-size: 1.7rem;

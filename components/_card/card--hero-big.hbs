@@ -10,6 +10,11 @@
             {{/if}}
             <div class="c-card__copy u-flex__content u-col--small-4 u-col--large-2">
                 <h3 class="c-card__title u-serif u-text17 u-font-weight--regular">{{ title }}</h3>
+                {{#if standfirst}}
+                <div class="c-card__standfirst u-serif u-text17">
+                    {{standfirst}}
+                </div>
+                {{/if}}
                 <div class="c-card__footer">
                     <span class="c-card__article-type sans-serif strong u-sans-serif u-text13 u-upper">{{ articleType }}</span>
                     <span class="c-card__spacer u-sans-serif u-text13"> | </span>

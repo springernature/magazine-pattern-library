@@ -49,6 +49,17 @@ $secondary-color: #666;
   text-decoration: underline;
 }
 
+.c-card__image-container,
+.c-card__standfirst {
+  margin-bottom: 10px;
+}
+
+.c-card__standfirst {
+  margin-bottom: 10px;
+  letter-spacing: 0.3px;
+  color: #595959;
+}
+
 .c-card--hero,
 .c-card--hero-big {
   background-color: #f2f2f2;
