@@ -159,6 +159,46 @@ img {
   flex-wrap: nowrap;
   width: 100%; }
 
+.u-flex__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  /* @media only screen and (min-width: 75.06em) */
+  /*@media only screen and 700px {*/ }
+  @media only screen and (min-width: 43.75em) {
+    .u-flex__container {
+      width: 0; } }
+
+.u-flex__content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
 .u-flex-content--stretch {
   -webkit-align-content: stretch;
   -ms-flex-line-pack: stretch;
@@ -195,6 +235,36 @@ img {
   -webkit-flex-direction: column-reverse;
   -ms-flex-direction: column-reverse;
   flex-direction: column-reverse; }
+
+.u-flex-align-self--auto {
+  -ms-flex-item-align: auto;
+  -ms-grid-row-align: auto;
+  align-self: auto; }
+
+.u-flex-align-self--flex-start {
+  -ms-flex-item-align: flex-start;
+  -ms-grid-row-align: flex-start;
+  align-self: flex-start; }
+
+.u-flex-align-self--flex-end {
+  -ms-flex-item-align: flex-end;
+  -ms-grid-row-align: flex-end;
+  align-self: flex-end; }
+
+.u-flex-align-self--center {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center; }
+
+.u-flex-align-self--baseline {
+  -ms-flex-item-align: baseline;
+  -ms-grid-row-align: baseline;
+  align-self: baseline; }
+
+.u-flex-align-self--stretch {
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-self: stretch; }
 
 .u-flex-grid {
   display: flex;
