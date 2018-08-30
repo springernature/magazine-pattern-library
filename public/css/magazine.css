@@ -27,10 +27,33 @@ html {
   box-sizing: inherit; }
 
 body {
-  padding: 20px; }
+  margin: 0;
+  padding: 0; }
 
 img {
   max-width: 100%; }
+
+.nature-header {
+  padding-bottom: 80px;
+  margin-bottom: 20px;
+  background-color: #940720; }
+
+.nature-header__ad-container {
+  background-color: #44444e;
+  min-height: 110px;
+  padding: 20px; }
+
+.nature-header__ad {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 728px;
+  height: 90px;
+  background-color: #f4f4f4; }
+
+.nature-header__breadcrumbs {
+  background-color: #5a5a62;
+  min-height: 35px;
+  padding: 10px 20px; }
 
 .c-card {
   position: relative;
