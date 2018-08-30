@@ -57,16 +57,20 @@ $secondary-color: #666;
     font-size: 24px;
   }
   .c-card__image-container {
-    margin: -10px -10px 15px -10px;
+    @include media-query("portable") {
+      margin: -10px -10px 15px -10px;
+    }
   }
 }
 
 .c-card--hero-big {
-  .c-card__image-container {
-    margin: 0;
-  }
-  .u-responsive-ratio {
-    margin: -10px -10px -10px 0;
+  @include media-query("portable") {
+    .c-card__image-container {
+      margin: 0;
+    }
+    .u-responsive-ratio {
+      margin: -10px -10px -10px 0;
+    }
   }
 }
 
@@ -85,4 +89,8 @@ $secondary-color: #666;
 
 .c-card--regular-image .c-card__copy {
   padding-left: 119px;
+}
+
+.c-card__footer {
+  align-items: flex-end;
 }
