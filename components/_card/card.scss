@@ -57,18 +57,13 @@ $secondary-color: #666;
     font-size: 24px;
   }
   .c-card__image-container {
-    @include media-query("portable") {
-      margin: -10px -10px 15px -10px;
-    }
+    margin: -10px -10px 15px -10px;
   }
 }
 
 .c-card--hero-big {
-  @include media-query("portable") {
+  @include media-query("large") {
     .c-card__image-container {
-      margin: 0;
-    }
-    .u-responsive-ratio {
       margin: -10px -10px -10px 0;
     }
   }

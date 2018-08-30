@@ -1,18 +1,18 @@
 <div class="u-container">
     <ul class="u-flex u-flex--wrap u-clean-list">
-        <li class="u-flex u-col u-col--medium-3 u-flex--wrap">
+        <li class="u-flex u-col u-col--large-3 u-flex--wrap">
             <div class="u-flex">
                 {{ render '@card--hero-big' }}
             </div>
             <ul class="u-flex u-flex--wrap u-clean-list">
                 {{#each articles_list_bottom}}
-                <li class="u-flex u-col u-col--medium-1">
+                <li class="u-flex u-col u-col--medium-2 u-col--large-1">
                     {{> '@card--major' }}
                 </li>
                 {{/each}}
             </ul>
         </li>
-        <li class="u-flex u-col u-col--medium-1">
+        <li class="u-flex u-col u-col--large-1">
             <ul class="u-flex u-flex--wrap u-clean-list">
                 {{#each articles_list_right}}
                 <li class="u-flex u-col">

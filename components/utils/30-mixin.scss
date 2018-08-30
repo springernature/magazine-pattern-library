@@ -25,6 +25,8 @@
 
 @mixin flex-container() {
   @include flex();
+  display: flex;
+  flex-flow: row wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -34,6 +36,9 @@
   width: 100%;
   @include media-query("portable") {
     width: 0;
+  }
+  * {
+    flex: 1 100%;
   }
 }
 

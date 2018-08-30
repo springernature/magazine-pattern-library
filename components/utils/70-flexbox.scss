@@ -45,3 +45,53 @@ $list-align-self: auto flex-start flex-end center baseline stretch;
     @include flex-align-self($value);
   }
 }
+
+@each $label, $map in $breakpoint-map {
+  @media only screen and (min-width: map-get($map, min-width)) {
+    .u-flex--#{$label} {
+      @include flex;
+    }
+
+    .u-flex--wrap--#{$label} {
+      @include flex-wrap();
+    }
+
+    .u-flex--nowrap--#{$label} {
+      @include flex-wrap(nowrap);
+    }
+
+    .u-flex__container--#{$label} {
+      @include flex-container();
+    }
+
+    .u-flex__content--#{$label} {
+      @include flex-content();
+    }
+
+    .u-flex-content--stretch--#{$label} {
+      @include flex-stretch();
+    }
+
+    .u-flex-direction--row--#{$label} {
+      @include flex-direction-row();
+    }
+
+    .u-flex-direction--column--#{$label} {
+      @include flex-direction-column();
+    }
+
+    .u-flex-direction--row-reverse--#{$label} {
+      @include flex-direction-row(true);
+    }
+
+    .u-flex-direction--column-reverse--#{$label} {
+      @include flex-direction-column(true);
+    }
+
+    @each $value in $list-align-self {
+      .u-flex-align-self--#{$value}--#{$label} {
+        @include flex-align-self($value);
+      }
+    }
+  }
+}

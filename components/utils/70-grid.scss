@@ -27,7 +27,7 @@ $grid-columns: 4;
     @for $i from 1 through $grid-columns {
       .u-col--#{$label}-#{$i} {
         flex-basis: round-width($i);
-        max-width: round-width($i);
+        // max-width: round-width($i);
       }
     }
   }
