@@ -33,28 +33,6 @@ body {
 img {
   max-width: 100%; }
 
-.nature-header {
-  padding-bottom: 80px;
-  margin-bottom: 20px;
-  background-color: #940720; }
-
-.nature-header__ad-container {
-  background-color: #44444e;
-  min-height: 110px;
-  padding: 20px; }
-
-.nature-header__ad {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 728px;
-  height: 90px;
-  background-color: #f4f4f4; }
-
-.nature-header__breadcrumbs {
-  background-color: #5a5a62;
-  min-height: 35px;
-  padding: 10px 20px; }
-
 .c-card {
   position: relative;
   border-bottom: 1px solid #d9d9d9;
@@ -947,3 +925,42 @@ when source text is already uppercase, hence the use of font-size, text-transfor
 
 .u-v-top {
   vertical-align: top; }
+
+.nature-header {
+  padding-bottom: 39px;
+  margin-bottom: 20px;
+  background-color: #940720;
+  /* @media only screen and (min-width: 75.06em) */
+  /*@media only screen and 700px {*/ }
+  @media only screen and (min-width: 43.75em) {
+    .nature-header {
+      padding-bottom: 80px; } }
+
+.nature-header__ad-container {
+  background-color: #44444e;
+  min-height: 110px;
+  padding: 20px;
+  display: none;
+  /* @media only screen and (min-width: 75.06em) */
+  /*@media only screen and 700px {*/ }
+  @media only screen and (min-width: 43.75em) {
+    .nature-header__ad-container {
+      display: block; } }
+
+.nature-header__ad {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 728px;
+  height: 90px;
+  background-color: #f4f4f4; }
+
+.nature-header__breadcrumbs {
+  background-color: #5a5a62;
+  min-height: 35px;
+  padding: 10px 20px;
+  display: none;
+  /* @media only screen and (min-width: 75.06em) */
+  /*@media only screen and 700px {*/ }
+  @media only screen and (min-width: 43.75em) {
+    .nature-header__breadcrumbs {
+      display: block; } }
