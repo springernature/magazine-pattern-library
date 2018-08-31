@@ -28,7 +28,6 @@ $grid-columns: 4;
       .u-col--#{$label}-#{$i} {
         flex-basis: round-width($i);
         flex: 1 round-width($i);
-        // max-width: round-width($i);
       }
     }
   }
