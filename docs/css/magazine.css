@@ -93,16 +93,15 @@ img {
   .c-card--hero-big .c-card__image-container {
     margin: -10px -10px 15px -10px; }
 
-.c-card--hero-big {
-  /* @media only screen and (min-width: 75.06em) */
-  /*@media only screen and 1280px {*/ }
-  @media only screen and (min-width: 80em) {
-    .c-card--hero-big .c-card__image-container {
-      margin: -10px -10px -10px 0; } }
+@media only screen and (min-width: 60em) {
+  .c-card--hero-big .c-card__image-container {
+    margin: -10px -10px -10px 0; } }
 
-/* @media only screen and (min-width: 75.06em) */
-/*@media only screen and 700px {*/
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 80em) {
+  .c-card--hero-big .c-card__image-container {
+    margin: -10px -10px -10px 0; } }
+
+@media only screen and (min-width: 30em) {
   .has-flex .c-card__container {
     width: 0; } }
 
@@ -179,10 +178,8 @@ img {
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
-  width: 100%;
-  /* @media only screen and (min-width: 75.06em) */
-  /*@media only screen and 700px {*/ }
-  @media only screen and (min-width: 43.75em) {
+  width: 100%; }
+  @media only screen and (min-width: 30em) {
     .u-flex__container {
       width: 0; } }
   .u-flex__container .u-flex--full-width {
@@ -310,10 +307,8 @@ img {
     -ms-flex-direction: column;
     flex-direction: column;
     position: relative;
-    width: 100%;
-    /* @media only screen and (min-width: 75.06em) */
-    /*@media only screen and 700px {*/ } }
-  @media only screen and (min-width: 0) and (min-width: 43.75em) {
+    width: 100%; } }
+  @media only screen and (min-width: 0) and (min-width: 30em) {
     .u-flex__container--small {
       width: 0; } }
 
@@ -431,10 +426,8 @@ img {
     -ms-flex-direction: column;
     flex-direction: column;
     position: relative;
-    width: 100%;
-    /* @media only screen and (min-width: 75.06em) */
-    /*@media only screen and 700px {*/ } }
-  @media only screen and (min-width: 480px) and (min-width: 43.75em) {
+    width: 100%; } }
+  @media only screen and (min-width: 480px) and (min-width: 30em) {
     .u-flex__container--medium {
       width: 0; } }
 
@@ -552,10 +545,8 @@ img {
     -ms-flex-direction: column;
     flex-direction: column;
     position: relative;
-    width: 100%;
-    /* @media only screen and (min-width: 75.06em) */
-    /*@media only screen and 700px {*/ } }
-  @media only screen and (min-width: 960px) and (min-width: 43.75em) {
+    width: 100%; } }
+  @media only screen and (min-width: 960px) and (min-width: 30em) {
     .u-flex__container--large {
       width: 0; } }
 
@@ -673,10 +664,8 @@ img {
     -ms-flex-direction: column;
     flex-direction: column;
     position: relative;
-    width: 100%;
-    /* @media only screen and (min-width: 75.06em) */
-    /*@media only screen and 700px {*/ } }
-  @media only screen and (min-width: 1100px) and (min-width: 43.75em) {
+    width: 100%; } }
+  @media only screen and (min-width: 1100px) and (min-width: 30em) {
     .u-flex__container--xlarge {
       width: 0; } }
 
@@ -957,10 +946,8 @@ when source text is already uppercase, hence the use of font-size, text-transfor
 .nature-header {
   padding-bottom: 39px;
   margin-bottom: 20px;
-  background-color: #940720;
-  /* @media only screen and (min-width: 75.06em) */
-  /*@media only screen and 700px {*/ }
-  @media only screen and (min-width: 43.75em) {
+  background-color: #940720; }
+  @media only screen and (min-width: 30em) {
     .nature-header {
       padding-bottom: 80px; } }
 
@@ -968,10 +955,8 @@ when source text is already uppercase, hence the use of font-size, text-transfor
   background-color: #44444e;
   min-height: 110px;
   padding: 20px;
-  display: none;
-  /* @media only screen and (min-width: 75.06em) */
-  /*@media only screen and 700px {*/ }
-  @media only screen and (min-width: 43.75em) {
+  display: none; }
+  @media only screen and (min-width: 30em) {
     .nature-header__ad-container {
       display: block; } }
 
@@ -986,9 +971,7 @@ when source text is already uppercase, hence the use of font-size, text-transfor
   background-color: #5a5a62;
   min-height: 35px;
   padding: 10px 20px;
-  display: none;
-  /* @media only screen and (min-width: 75.06em) */
-  /*@media only screen and 700px {*/ }
-  @media only screen and (min-width: 43.75em) {
+  display: none; }
+  @media only screen and (min-width: 30em) {
     .nature-header__breadcrumbs {
       display: block; } }

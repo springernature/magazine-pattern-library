@@ -34,7 +34,7 @@
   flex-direction: column;
   position: relative;
   width: 100%;
-  @include media-query("portable") {
+  @include media-query("medium") {
     width: 0;
   }
   .u-flex--full-width {

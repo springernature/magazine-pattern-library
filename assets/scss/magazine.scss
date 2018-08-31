@@ -40,22 +40,24 @@ $breakpoint-map: (
 
 @mixin media-query($media-query) {
   $breakpoint-found: false;
+
+  @each $label, $map in $breakpoint-map {
+    @if $media-query == $label and $map {
+      $breakpoint-found: true;
+      @media only screen and (min-width: #{em(map-get($map, min-width))}) {
+        @content;
+      }
+    }
+  }
   @each $breakpoint in $breakpoints {
     $name: nth($breakpoint, 1);
     $declaration: nth($breakpoint, 2);
     @if $media-query == $name and $declaration {
       $breakpoint-found: true;
-
-      /* @media only screen and (min-width: 75.06em) */
-
-      /*@media only screen and #{$declaration} {*/
       @media only screen and (min-width: #{em($declaration)}) {
         @content;
       }
     }
-  }
-  @if not $breakpoint-found {
-    @warn 'Breakpoint `#{$media-query}` does not exist';
   }
 }
 
@@ -105,7 +107,7 @@ img {
   padding-bottom: 39px;
   margin-bottom: 20px;
   background-color: #940720;
-  @include media-query("portable") {
+  @include media-query("medium") {
     padding-bottom: 80px;
   }
 }
@@ -115,7 +117,7 @@ img {
   min-height: 110px;
   padding: 20px;
   display: none;
-  @include media-query("portable") {
+  @include media-query("medium") {
     display: block;
   }
 }
@@ -133,7 +135,7 @@ img {
   min-height: 35px;
   padding: 10px 20px;
   display: none;
-  @include media-query("portable") {
+  @include media-query("medium") {
     display: block;
   }
 }

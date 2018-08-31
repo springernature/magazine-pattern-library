@@ -80,7 +80,7 @@ $secondary-color: #666;
   }
 }
 
-@include media-query("portable") {
+@include media-query("medium") {
   .has-flex .c-card__container {
     width: 0;
   }
