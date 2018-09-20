@@ -21,5 +21,14 @@
                 {{/each}}
             </ul>
         </li>
+        <li class="u-flex u-col u-col--large-4">
+            <ul class="u-flex u-flex--wrap u-clean-list">
+                {{#each articles_list_bottom}}
+                <li class="u-flex u-col u-col--medium-2 u-col--large-1">
+                    {{> '@card--major' }}
+                </li>
+                {{/each}}
+            </ul>
+        </li>
     </ul>
 </div>
