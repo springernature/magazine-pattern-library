@@ -124,7 +124,9 @@ img {
 
 .u-container {
   margin: 0 auto;
-  max-width: 1104px; }
+  max-width: 1104px;
+  padding-left: 20px;
+  padding-right: 20px; }
 
 .u-demo-container {
   max-width: 500px;
