@@ -20,4 +20,4 @@ title: Magazine Pattern Library
 
 ### Layout
 
-[ Home Page ](/magazine-pattern-library/components/detail/home-page.html)
+[ Home Page ](/magazine-pattern-library/components/detail/demo--home-v2.html)

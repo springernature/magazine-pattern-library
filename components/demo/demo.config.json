@@ -13,13 +13,6 @@
       }
     },
     {
-      "name": "home-v1",
-      "label": "Home v1",
-      "context": {
-        "modifier": "home-v1"
-      }
-    },
-    {
       "name": "home-v2",
       "label": "Home v2",
       "context": {
@@ -48,9 +41,49 @@
             "title": "Turtle trouble, fund fraud and India’s escape module",
             "articleType": "Seven Days",
             "date": "18 JUL 2018"
+          },
+          {
+            "modifier": "regular",
+            "title": "Election security, CRISPR patents and Australia’s drought",
+            "articleType": "Seven Days",
+            "date": "18 JUL 2018"
           }
         ],
         "articles_list_bottom": [
+          {
+            "modifier": "major",
+            "title": "CRISPR plants now subject to tough GM laws in European Union",
+            "articleType": "News",
+            "date": "18 JUL 2018",
+            "image": "//media.nature.com/w580h326/magazine-assets/d41586-018-05814-6/d41586-018-05814-6_15977140.jpg",
+            "standfirst": "Top court’s ruling threatens research on gene-edited crops in the bloc."
+          },
+          {
+            "modifier": "major",
+            "title": "Controversial US ketamine trial sparks ethics complaint",
+            "articleType": "News",
+            "date": "18 JUL 2018",
+            "image": "https://media.nature.com/w580h326/magazine-assets/d41586-018-05805-7/d41586-018-05805-7_15974394.jpg",
+            "standfirst": "Advocacy group alleges that emergency medical workers in Minnesota gave patients ketamine injections without consent, despite known risks."
+          },
+          {
+            "modifier": "major",
+            "title": "Former head of US CDC arrested over alleged groping incident",
+            "articleType": "News",
+            "date": "18 JUL 2018",
+            "image": "//media.nature.com/w580h326/magazine-assets/d41586-018-06083-z/d41586-018-06083-z_16070676.jpg",
+            "standfirst": "Tom Frieden, former director of the US Centers for Disease Control and Prevention, is charged with forcible touching, sex abuse and harassment."
+          },
+          {
+            "modifier": "major",
+            "articleType": "News",
+            "date": "18 JUL 2018",
+            "title": "US government failing to provide recovery plans for some endangered species",
+            "image": "//media.nature.com/w580h326/magazine-assets/d41586-018-06064-2/d41586-018-06064-2_16070492.jpg",
+            "standfirst": "US agencies have no official recovery plans for almost one-quarter of the plants and animals protected under the landmark Endangered Species Act."
+          }
+        ],
+        "articles_list_second_images": [
           {
             "modifier": "major",
             "title": "CRISPR plants now subject to tough GM laws in European Union",
