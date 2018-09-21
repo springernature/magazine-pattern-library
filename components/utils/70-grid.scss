@@ -25,7 +25,7 @@ $grid-columns: 4;
 @each $label, $map in $breakpoint-map {
   @media only screen and (min-width: map-get($map, min-width)) {
     @for $i from 1 through $grid-columns {
-      .u-col--#{$label}-#{$i} {
+      .u-col--#{$label}-#{$grid-columns}-#{$i} {
         flex-basis: round-width($i);
         flex: 1 round-width($i);
       }

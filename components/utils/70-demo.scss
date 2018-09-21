@@ -7,8 +7,8 @@
 .u-container {
   margin: 0 auto;
   max-width: 1104px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .u-demo-container {
@@ -25,4 +25,15 @@
 
 .u-full-width {
   width: 100%;
+}
+
+@each $label, $map in $breakpoint-map {
+  @media only screen and (min-width: map-get($map, min-width)) {
+    .u-show--#{$label} {
+      display: block;
+    }
+    .u-hide--#{$label} {
+      display: none;
+    }
+  }
 }

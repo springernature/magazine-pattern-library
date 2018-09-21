@@ -73,6 +73,12 @@ $secondary-color: #666;
 }
 
 .c-card--hero-big {
+  margin-left: -10px;
+  margin-right: -10px;
+  @include media-query("medium") {
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+  }
   @include media-query("large") {
     .c-card__image-container {
       margin: -10px -10px -10px 0;

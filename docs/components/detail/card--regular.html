@@ -160,9 +160,9 @@
     <code class="Code Code--lang-html">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card c-card--regular u-flex"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__container u-flex__container"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__copy u-flex__content"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__container u-flex"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-flex__container u-flex-direction--row-reverse"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__copy u-flex__content u-col--small-4-3 u-col--medium-4-4"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__title u-serif u-text17 u-font-weight--regular"</span>&gt;</span>Ecologists try to speed up evolution to save Australian marsupial from toxic toads.<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__footer"</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" c-card__article-type sans-serif strong u-sans-serif u-text13 u-upper "</span>&gt;</span>News<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
@@ -181,24 +181,31 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-584d0a39ab8aa52e898a9a883df40f90-panel-view">
     <code class="Code Code--lang-handlebars">
         <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card c-card--</span></span></span><span class="hljs-template-variable">{{ modifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> u-flex"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__container u-flex__container"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__container u-flex"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-flex__container u-flex-direction--row-reverse"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
             </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> image}}</span><span class="xml">
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__image-container"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__image-container u-col--small-4-1 u-col--medium-4-4"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-responsive-ratio"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ image }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"//media.nature.com/w150/magazine-assets/</span></span></span><span class="hljs-template-variable">{{ image }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> 150w,
+                    //media.nature.com/w362/magazine-assets/</span></span></span><span class="hljs-template-variable">{{ image }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> 362w,
+                     //media.nature.com/w260/magazine-assets/</span></span></span><span class="hljs-template-variable">{{ image }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>
+                        <span class="hljs-attr">sizes</span>=<span class="hljs-string">"(max-width: 480px) 150px,
+                        (max-width: 1024px) 362px,
+                    800px"</span>
+                        <span class="hljs-attr">src</span>=<span class="hljs-string">"//media.nature.com/w362/magazine-assets/</span></span></span><span class="hljs-template-variable">{{ image }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ title }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__copy u-flex__content"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__copy u-flex__content u-col--small-4-3 u-col--medium-4-4"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__title u-serif u-text17 u-font-weight--regular"</span>&gt;</span></span><span class="hljs-template-variable">{{ title }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
                 </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> standfirst}}</span><span class="xml">
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__standfirst u-sans-serif u-text15"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__standfirst u-sans-serif u-text15 u-hide--small u-show--medium"</span>&gt;</span>
                     </span><span class="hljs-template-variable">{{standfirst}}</span><span class="xml">
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__footer"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" c-card__article-type sans-serif strong u-sans-serif u-text13 u-upper "</span>&gt;</span></span><span class="hljs-template-variable">{{ articleType }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" c-card__article-type sans-serif strong u-sans-serif u-text13 u-upper "</span>&gt;</span></span><span class="hljs-template-variable">{{ articleType
+                        }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__spacer u-sans-serif u-text13 "</span>&gt;</span> | <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-card__date u-sans-serif u-text13 "</span>&gt;</span></span><span class="hljs-template-variable">{{ date }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -325,6 +332,12 @@
 }
 
 <span class="hljs-selector-class">.c-card--hero-big</span> {
+  <span class="hljs-attribute">margin-left</span>: -<span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">margin-right</span>: -<span class="hljs-number">10px</span>;
+  @<span class="hljs-keyword">include</span> media-query(<span class="hljs-string">"medium"</span>) {
+    <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">0.625rem</span>;
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">0.625rem</span>;
+  }
   @<span class="hljs-keyword">include</span> media-query(<span class="hljs-string">"large"</span>) {
     <span class="hljs-selector-class">.c-card__image-container</span> {
       <span class="hljs-attribute">margin</span>: -<span class="hljs-number">10px</span> -<span class="hljs-number">10px</span> -<span class="hljs-number">10px</span> <span class="hljs-number">0</span>;
@@ -368,7 +381,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.6 KB</span>
+                    <span class="Meta-value">1.7 KB</span>
                 </li>
             </ul>
         </div>

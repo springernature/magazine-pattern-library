@@ -1,22 +1,29 @@
 <div class="c-card c-card--{{ modifier }} u-flex">
-    <div class="c-card__container u-flex__container">
-        <a href="#">
+    <div class="c-card__container u-flex">
+        <a class="u-flex__container u-flex-direction--row-reverse" href="#">
             {{#if image}}
-            <div class="c-card__image-container">
+            <div class="c-card__image-container u-col--small-4-1 u-col--medium-4-4">
                 <div class="u-responsive-ratio">
-                    <img src="{{ image }}" />
+                    <img srcset="//media.nature.com/w150/magazine-assets/{{ image }} 150w,
+                    //media.nature.com/w362/magazine-assets/{{ image }} 362w,
+                     //media.nature.com/w260/magazine-assets/{{ image }}"
+                        sizes="(max-width: 480px) 150px,
+                        (max-width: 1024px) 362px,
+                    800px"
+                        src="//media.nature.com/w362/magazine-assets/{{ image }}" alt="{{ title }}">
                 </div>
             </div>
             {{/if}}
-            <div class="c-card__copy u-flex__content">
+            <div class="c-card__copy u-flex__content u-col--small-4-3 u-col--medium-4-4">
                 <h3 class="c-card__title u-serif u-text17 u-font-weight--regular">{{ title }}</h3>
                 {{#if standfirst}}
-                <div class="c-card__standfirst u-sans-serif u-text15">
+                <div class="c-card__standfirst u-sans-serif u-text15 u-hide--small u-show--medium">
                     {{standfirst}}
                 </div>
                 {{/if}}
                 <div class="c-card__footer">
-                    <span class=" c-card__article-type sans-serif strong u-sans-serif u-text13 u-upper ">{{ articleType }}</span>
+                    <span class=" c-card__article-type sans-serif strong u-sans-serif u-text13 u-upper ">{{ articleType
+                        }}</span>
                     <span class="c-card__spacer u-sans-serif u-text13 "> | </span>
                     <span class="c-card__date u-sans-serif u-text13 ">{{ date }}</span>
                 </div>
