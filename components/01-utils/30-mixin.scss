@@ -1,3 +1,26 @@
+@mixin media-query($media-query) {
+  $breakpoint-found: false;
+
+  @each $label, $map in $breakpoint-map {
+    @if $media-query == $label and $map {
+      $breakpoint-found: true;
+      @media only screen and (min-width: #{em(map-get($map, min-width))}) {
+        @content;
+      }
+    }
+  }
+  @each $breakpoint in $breakpoints {
+    $name: nth($breakpoint, 1);
+    $declaration: nth($breakpoint, 2);
+    @if $media-query == $name and $declaration {
+      $breakpoint-found: true;
+      @media only screen and (min-width: #{em($declaration)}) {
+        @content;
+      }
+    }
+  }
+}
+
 @mixin flex {
   display: -webkit-box;
   display: -webkit-flex;
