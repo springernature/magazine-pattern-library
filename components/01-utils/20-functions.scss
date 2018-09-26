@@ -2,3 +2,9 @@
   // Divide by 16px which is (generally) the browser default font size
   @return ($size / 16px) * 1em;
 }
+
+//round flex items' width
+@function round-width($i) {
+  $width: floor(100 * $i * 100 / $grid-columns) / 100;
+  @return $width#{"%"};
+}

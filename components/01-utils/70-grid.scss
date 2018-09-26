@@ -16,12 +16,6 @@ $grid-columns: 4;
   flex-basis: 100%;
 }
 
-//round flex items' width
-@function round-width($i) {
-  $width: floor(100 * $i * 100 / $grid-columns) / 100;
-  @return $width#{"%"};
-}
-
 @each $label, $map in $breakpoint-map {
   @media only screen and (min-width: map-get($map, min-width)) {
     @for $i from 1 through $grid-columns {
