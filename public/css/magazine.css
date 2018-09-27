@@ -1115,12 +1115,18 @@ when source text is already uppercase, hence the use of font-size, text-transfor
   padding-bottom: 39px;
   margin-bottom: 20px;
   background-color: #940720; }
+  @media only screen and (min-width: 43.75em) {
+    .nature-header {
+      padding-bottom: 80px; } }
 
 .nature-header__ad-container {
   background-color: #44444e;
   min-height: 110px;
   padding: 20px;
   display: none; }
+  @media only screen and (min-width: 43.75em) {
+    .nature-header__ad-container {
+      display: block; } }
 
 .nature-header__ad {
   margin: 0 auto;
@@ -1134,3 +1140,6 @@ when source text is already uppercase, hence the use of font-size, text-transfor
   min-height: 35px;
   padding: 10px 20px;
   display: none; }
+  @media only screen and (min-width: 43.75em) {
+    .nature-header__breadcrumbs {
+      display: block; } }

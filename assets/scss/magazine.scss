@@ -44,7 +44,7 @@ img {
   padding-bottom: 39px;
   margin-bottom: 20px;
   background-color: #940720;
-  @include media-query("medium") {
+  @include media-query("portable") {
     padding-bottom: 80px;
   }
 }
@@ -54,7 +54,7 @@ img {
   min-height: 110px;
   padding: 20px;
   display: none;
-  @include media-query("medium") {
+  @include media-query("portable") {
     display: block;
   }
 }
@@ -72,7 +72,7 @@ img {
   min-height: 35px;
   padding: 10px 20px;
   display: none;
-  @include media-query("medium") {
+  @include media-query("portable") {
     display: block;
   }
 }
