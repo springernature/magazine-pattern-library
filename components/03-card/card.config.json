@@ -1,6 +1,6 @@
 {
   "title": "Card",
-  "status": "prototype",
+  "status": "wip",
   "default": "regular",
   "tags": ["sprint-1", "author:matteo"],
   "context": {},
