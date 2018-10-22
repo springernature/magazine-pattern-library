@@ -1029,6 +1029,26 @@ when source text is already uppercase, hence the use of font-size, text-transfor
 .u-v-top {
   vertical-align: top; }
 
+.c-component {
+  margin-top: 20px; }
+
+.c-component__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 10px .625rem; }
+
+.c-component__title a {
+  color: inherit;
+  text-decoration: inherit; }
+
+.c-component__title a:hover {
+  text-decoration: underline; }
+
+.c-component__title:after {
+  content: "\203A";
+  display: inline-block;
+  margin-left: 10px; }
+
 .c-card {
   position: relative;
   border-bottom: 1px solid #d9d9d9;
@@ -1076,7 +1096,17 @@ when source text is already uppercase, hence the use of font-size, text-transfor
 .c-card__standfirst {
   margin-bottom: 10px;
   letter-spacing: 0.3px;
-  color: #595959; }
+  color: #595959;
+  display: none; }
+  @media only screen and (min-width: 43.75em) {
+    .c-card__standfirst {
+      display: block; } }
+  @media only screen and (min-width: 60em) {
+    .c-card__standfirst {
+      display: block; } }
+  @media only screen and (min-width: 80em) {
+    .c-card__standfirst {
+      display: block; } }
 
 .c-card--hero,
 .c-card--hero-big {

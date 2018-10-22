@@ -116,6 +116,20 @@
             "image": "d41586-018-06769-4/d41586-018-06769-4_16139328.jpg",
             "standfirst": "Exclusive: Document shows that the astronomer toned down the claims that triggered science history’s most infamous battle — then lied about his edits."
           }
+        ],
+        "articles_list_second_automated": [
+          {
+            "modifier": "major",
+            "title": "Discovery of vibrant deep-sea life prompts new worries over seabed mining",
+            "articleType": "News",
+            "date": "18 JUL 2018"
+          },
+          {
+            "modifier": "major",
+            "articleType": "News",
+            "date": "18 JUL 2018",
+            "title": "Discovery of Galileo’s long-lost letter shows he edited his heretical ideas to fool the Inquisition"
+          }
         ]
       }
     }

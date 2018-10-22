@@ -58,6 +58,16 @@ $secondary-color: #666;
   margin-bottom: 10px;
   letter-spacing: 0.3px;
   color: #595959;
+  display: none;
+  @include media-query("portable") {
+    display: block;
+  }
+  @include media-query("desk") {
+    display: block;
+  }
+  @include media-query("large") {
+    display: block;
+  }
 }
 
 .c-card--hero,
