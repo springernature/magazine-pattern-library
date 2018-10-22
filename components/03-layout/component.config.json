@@ -1,0 +1,20 @@
+{
+  "title": "Component",
+  "status": "wip",
+  "default": "component-hydrogen",
+  "tags": ["sprint-1", "author:matteo"],
+  "context": {},
+  "variants": [
+    {
+      "name": "component-hydrogen",
+      "label": "Simplest component type",
+      "context": {
+        "modifier": "component-hydrogen",
+        "demo": true,
+        "title": "Foo jar",
+        "firstLineContent": "The first line of content",
+        "secondLineContent": "Additional repeatable content"
+      }
+    }
+  ]
+}
