@@ -56,7 +56,7 @@
       "name": "major-image",
       "label": "Major with image",
       "context": {
-        "modifier": "major-image",
+        "modifier": "major",
         "demo": true,
         "title": "Ecologists try to speed up evolution to save Australian marsupial from toxic toads.",
         "articleType": "News",

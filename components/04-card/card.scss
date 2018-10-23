@@ -14,6 +14,13 @@ $secondary-color: #666;
   position: relative;
 }
 
+.c-card__container--major {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
 .c-card__copy {
   margin-bottom: 15px;
   padding-left: 0.3125rem;
@@ -49,6 +56,34 @@ $secondary-color: #666;
   text-decoration: underline;
 }
 
+.c-card--major a {
+  display: flex;
+  flex-direction: row-reverse;
+  @include media-query("portable") {
+    flex-direction: column;
+  }
+  @include media-query("desk") {
+    flex-direction: column;
+  }
+  @include media-query("large") {
+    flex-direction: column;
+  }
+  flex-grow: 1;
+}
+
+.c-card__image-container--major {
+  flex-basis: 32%;
+  @include media-query("portable") {
+    flex-basis: 100%;
+  }
+  @include media-query("desk") {
+    flex-basis: 100%;
+  }
+  @include media-query("large") {
+    flex-basis: 100%;
+  }
+}
+
 .c-card__image-container,
 .c-card__standfirst {
   margin-bottom: 10px;
@@ -58,6 +93,20 @@ $secondary-color: #666;
   margin-bottom: 10px;
   letter-spacing: 0.3px;
   color: #595959;
+  display: none;
+  @include media-query("portable") {
+    display: block;
+  }
+  @include media-query("desk") {
+    display: block;
+  }
+  @include media-query("large") {
+    display: block;
+  }
+}
+
+.c-card__standfirst--major,
+.c-card__standfirst--regular {
   display: none;
   @include media-query("portable") {
     display: block;
@@ -111,6 +160,10 @@ $secondary-color: #666;
 
 .c-card--regular-image .c-card__copy {
   padding-left: 119px;
+}
+
+.c-card__body {
+  flex-grow: 1;
 }
 
 .c-card__footer {
