@@ -1067,7 +1067,7 @@ when source text is already uppercase, hence the use of font-size, text-transfor
   width: 100%; }
 
 .c-card__copy {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   padding-left: 0.3125rem;
   padding-right: 0.3125rem; }
 
@@ -1195,7 +1195,12 @@ when source text is already uppercase, hence the use of font-size, text-transfor
   flex-grow: 1; }
 
 .c-card__footer {
-  align-items: flex-end; }
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 0 0.3125rem; }
 
 .nature-header {
   padding-bottom: 39px;
